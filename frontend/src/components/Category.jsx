@@ -16,7 +16,7 @@ function Category() {
   useEffect(() => {
     const fetchMoviesByCategory = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/category/${categoryName}`);
+        const res = await fetch(`https://movie-search-app-s8nw.onrender.com/api/category/${categoryName}`);
         if (!res.ok) {
           throw new Error('Network response was not ok');
         }

@@ -9,7 +9,7 @@ export default function MovieDetails() {
   useEffect(() => {
     const fetchMovie = async () => {
       try {
-        const res = await axios.get(`https://mern-app-movie-search.onrender.com/api/movie/${id}`);
+        const res = await axios.get(`https://movie-search-app-s8nw.onrender.com/api/movie/${id}`);
         setMovie(res.data);
       } catch (err) {
         console.error("Failed fetching movie details:", err);

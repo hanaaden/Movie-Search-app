@@ -10,7 +10,7 @@ function Movie() {
   const handleSearch = async () => {
     if (!searchTerm.trim()) return;
     try {
-      const res = await fetch(`https://mern-app-movie-search.onrender.com/api/search?query=${searchTerm}`);
+      const res = await fetch(`https://movie-search-app-s8nw.onrender.com/api/search?query=${searchTerm}`);
       const data = await res.json();
       setSearchResults(data.results);
     } catch (err) {

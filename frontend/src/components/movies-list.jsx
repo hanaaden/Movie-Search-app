@@ -9,7 +9,7 @@ function MovieList({ movies: propMovies, title = "Trending now" }) {
     if (!propMovies) {
       const fetchMovies = async () => {
         try {
-          const res = await fetch('https://mern-app-movie-search.onrender.com/api/trending');
+          const res = await fetch('https://movie-search-app-s8nw.onrender.com/api/trending');
           if (!res.ok) {
             throw new Error('Network response was not ok');
           }

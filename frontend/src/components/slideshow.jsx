@@ -8,7 +8,7 @@ const MovieSlideshow = () => {
   useEffect(() => {
     const fetchTrending = async () => {
       try {
-        const res = await fetch('https://mern-app-movie-search.onrender.com/api/trending');
+        const res = await fetch('https://movie-search-app-s8nw.onrender.com/api/trending');
         const data = await res.json();
         setMovies(data.results.slice(0, 4));
       } catch (err) {
